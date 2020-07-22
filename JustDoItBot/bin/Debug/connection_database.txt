@@ -1,0 +1,1 @@
+Server=(localdb)\mssqllocaldb;Database=FoodDiaryDb;Trusted_Connection=True;
