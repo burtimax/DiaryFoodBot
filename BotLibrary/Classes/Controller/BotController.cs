@@ -9,6 +9,7 @@ using JetBrains.Annotations;
 using Telegram.Bot;
 using Telegram.Bot.Args;
 using Telegram.Bot.Types;
+using Telegram.Bot.Types.Enums;
 using File = System.IO.File;
 
 namespace BotLibrary.Classes.Controller
@@ -35,6 +36,10 @@ namespace BotLibrary.Classes.Controller
             this.Bot.TelegramClient.OnMessage -= ProcessMessage;
             this.Bot.TelegramClient.OnMessage += ProcessMessage;
 
+            //this.Bot.TelegramClient.OnUpdate -= OnUpdate;
+            //this.Bot.TelegramClient.OnUpdate += OnUpdate;
+
+
             this.Bot.TelegramClient.OnCallbackQuery -= OnCallback;
             this.Bot.TelegramClient.OnCallbackQuery += OnCallback;
         }
@@ -57,6 +62,8 @@ namespace BotLibrary.Classes.Controller
             }
         }
 
+
+
         private void OnCallback(object sender, CallbackQueryEventArgs args)
         {
             this.Bot.TelegramClient.AnswerCallbackQueryAsync(args.CallbackQuery.Id);
@@ -75,6 +82,23 @@ namespace BotLibrary.Classes.Controller
             this.Bot.Stop();
         }
 
+
+
+        //private void OnUpdate(object sender, UpdateEventArgs args)
+        //{
+        //    if(Equals(args.Update.CallbackQuery, null) == false)
+        //    {
+        //        this.Bot.TelegramClient.AnswerCallbackQueryAsync(args.Update.CallbackQuery.Id);
+        //        /*proc.ProcessCallback(this.Bot.TelegramClient,
+        //            args.Update.CallbackQuery,
+        //            args.Update.CallbackQuery.From.Id);*/
+        //    }
+
+        //    if (Equals(args.Update.Message, null) == false)
+        //    {
+
+        //    }
+        //}
 
     }
 

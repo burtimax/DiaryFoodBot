@@ -72,15 +72,6 @@ namespace FoodDiaryBot.Source.ChatStates
                 return h ?? this.State?.HopOnSuccess;
             }
 
-            //Подключить к марафону
-            MarathonUser mu = new MarathonUser()
-            {
-                Marathon = marathon,
-                MarathonId = marathon.Id,
-                User = user,
-                UserId = user.Id,
-            };
-            user.Marathons.Add(mu);
             user.ActiveMarathonPublicKey = marathon.PublicKey;
             this.Db.SaveChanges();
 

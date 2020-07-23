@@ -6,6 +6,7 @@ using BotLibrary.Classes.Data;
 using BotLibrary.Interfaces;
 using DiaryClassLibStandart.Helpers;
 using Telegram.Bot;
+using Telegram.Bot.Types.Enums;
 
 namespace BotLibrary.Classes
 {
@@ -53,7 +54,11 @@ namespace BotLibrary.Classes
             {
                 return;
             }
-            this.Bot.StartReceiving();
+            this.Bot.StartReceiving(new UpdateType[]
+            {
+                UpdateType.Message,
+                UpdateType.CallbackQuery,
+            });
         }
 
         /// <summary>

@@ -7,6 +7,7 @@ using FoodDiaryBot.DataBase.Models;
 using JustDoItBot.DataBase.Models;
 using JustDoItBot.Source.ChatStates;
 using JustDoItBot.Source.Constants;
+using Microsoft.EntityFrameworkCore;
 using Telegram.Bot;
 using Telegram.Bot.Types.Enums;
 
@@ -68,11 +69,11 @@ namespace FoodDiaryBot.Source.ChatStates
 
             //Подключить пользователя к марафону.
             var user = DbMethods.GetUserByChatId(this.Db, mes.ChatId);
-
+            
             //Проверим если пользователь уже подключен к марафону
-            var mar = (from m in user.Marathons
-                where (m.Marathon.PublicKey == text) && (user.ActiveMarathonPublicKey == m.Marathon.PublicKey)
-                select m.Marathon).FirstOrDefault();
+            var mar = (from m in this.Db.Marathons
+                where (m.PublicKey == text.Trim(' ')) && (user.ActiveMarathonPublicKey == m.PublicKey)
+                select m).FirstOrDefault();
             if(mar != null)
             {
                 Hop h = this.State?.HopOnSuccess?.GetCopy();
@@ -83,15 +84,8 @@ namespace FoodDiaryBot.Source.ChatStates
                 return h ?? this.State?.HopOnSuccess;
             }
 
-            //Подключить к марафону
-            MarathonUser mu = new MarathonUser()
-            {
-                Marathon = marathon,
-                MarathonId = marathon.Id,
-                User = user,
-                UserId = user.Id,
-            };
-            user.Marathons.Add(mu);
+            
+
             user.ActiveMarathonPublicKey = marathon.PublicKey;
             this.Db.SaveChanges();
 

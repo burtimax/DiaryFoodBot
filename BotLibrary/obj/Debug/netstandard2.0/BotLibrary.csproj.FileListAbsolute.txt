@@ -30,3 +30,11 @@ D:\Programming\VisualStudioProjects\FoodDiaryBot\Band_TelegramBot\BotLibrary\obj
 D:\Programming\VisualStudioProjects\FoodDiaryBot\Band_TelegramBot\BotLibrary\obj\Debug\netstandard2.0\BotLibrary.AssemblyInfo.cs
 D:\Programming\VisualStudioProjects\FoodDiaryBot\Band_TelegramBot\BotLibrary\obj\Debug\netstandard2.0\BotLibrary.dll
 D:\Programming\VisualStudioProjects\FoodDiaryBot\Band_TelegramBot\BotLibrary\obj\Debug\netstandard2.0\BotLibrary.pdb
+D:\Programming\VisualStudioProjects\FoodDiaryBot\repos\DiaryFoodBot\BotLibrary\obj\Debug\netstandard2.0\BotLibrary.csprojAssemblyReference.cache
+D:\Programming\VisualStudioProjects\FoodDiaryBot\repos\DiaryFoodBot\BotLibrary\obj\Debug\netstandard2.0\BotLibrary.AssemblyInfoInputs.cache
+D:\Programming\VisualStudioProjects\FoodDiaryBot\repos\DiaryFoodBot\BotLibrary\obj\Debug\netstandard2.0\BotLibrary.AssemblyInfo.cs
+D:\Programming\VisualStudioProjects\FoodDiaryBot\repos\DiaryFoodBot\BotLibrary\obj\Debug\netstandard2.0\BotLibrary.dll
+D:\Programming\VisualStudioProjects\FoodDiaryBot\repos\DiaryFoodBot\BotLibrary\obj\Debug\netstandard2.0\BotLibrary.pdb
+D:\Programming\VisualStudioProjects\FoodDiaryBot\repos\DiaryFoodBot\BotLibrary\bin\Debug\netstandard2.0\BotLibrary.deps.json
+D:\Programming\VisualStudioProjects\FoodDiaryBot\repos\DiaryFoodBot\BotLibrary\bin\Debug\netstandard2.0\BotLibrary.dll
+D:\Programming\VisualStudioProjects\FoodDiaryBot\repos\DiaryFoodBot\BotLibrary\bin\Debug\netstandard2.0\BotLibrary.pdb

@@ -481,5 +481,8 @@ namespace DbInteractionMethods
                 where consultantMarathonsPublicKey.Contains(u.ActiveMarathonPublicKey)
                 select u)?.Count() ?? 0;
         }
+
+
+        
     }
 }

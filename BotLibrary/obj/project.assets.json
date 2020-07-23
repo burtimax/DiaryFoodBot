@@ -4387,11 +4387,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\VisualStudioProjects\\FoodDiaryBot\\Band_TelegramBot\\BotLibrary\\BotLibrary.csproj",
+      "projectUniqueName": "D:\\Programming\\VisualStudioProjects\\FoodDiaryBot\\repos\\DiaryFoodBot\\BotLibrary\\BotLibrary.csproj",
       "projectName": "BotLibrary",
-      "projectPath": "D:\\Programming\\VisualStudioProjects\\FoodDiaryBot\\Band_TelegramBot\\BotLibrary\\BotLibrary.csproj",
+      "projectPath": "D:\\Programming\\VisualStudioProjects\\FoodDiaryBot\\repos\\DiaryFoodBot\\BotLibrary\\BotLibrary.csproj",
       "packagesPath": "C:\\Users\\timof\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\VisualStudioProjects\\FoodDiaryBot\\Band_TelegramBot\\BotLibrary\\obj\\",
+      "outputPath": "D:\\Programming\\VisualStudioProjects\\FoodDiaryBot\\repos\\DiaryFoodBot\\BotLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\"
